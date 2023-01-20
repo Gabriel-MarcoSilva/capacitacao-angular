@@ -5,6 +5,11 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 ## se não conseguir usar o npm install use o comando:
 
 if fai the command `npm install`, use the command `npm config set legacy-peer-deps true`
+
+## backend:
+
+>> https://github.com/WilsonGodoi/node-course-carsales
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
