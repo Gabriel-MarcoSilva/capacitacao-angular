@@ -8,7 +8,7 @@ if fai the command `npm install`, use the command `npm config set legacy-peer-de
 
 ## backend:
 
->> https://github.com/WilsonGodoi/node-course-carsales
+>> pokemon api
 
 ## Development server
 
