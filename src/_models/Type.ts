@@ -1,4 +1,5 @@
 export enum Type{
     Grass = 'grass',
-    Poison = 'poison'
+    Poison = 'poison',
+    Fire = "Fire"
   }
