@@ -24,6 +24,7 @@ export class Aula3Component {
 
   eventInput(e: any){
     console.log(e)
+    this.email = (<HTMLInputElement> e.target).value
   }  
 
   trade(){
