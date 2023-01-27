@@ -10,6 +10,7 @@ import { Aula3Component } from './components/aula3/aula3.component';
 import { Aula4Component } from './components/aula4/aula4.component';
 import { Aula5Component } from './components/aula5/aula5.component';
 import { Aula6Component } from './components/aula6/aula6.component';
+import { Aula7Component } from './components/aula7/aula7.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { Aula6Component } from './components/aula6/aula6.component';
     Aula3Component,
     Aula4Component,
     Aula5Component,
-    Aula6Component
+    Aula6Component,
+    Aula7Component
   ],
   imports: [
     BrowserModule,
