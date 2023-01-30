@@ -4,11 +4,11 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## se não conseguir usar o npm install use o comando:
 
-if fai the command `npm install`, use the command `npm config set legacy-peer-deps true`
+if fail the command `npm install`, use the command `npm config set legacy-peer-deps true`
 
 ## backend:
 
->> pokemon api
+>> https://github.com/WilsonGodoi/node-course-carsales
 
 ## Development server
 
