@@ -19,7 +19,6 @@ import { ButtonModule } from "primeng/button"
     HttpClientModule,
     FormsModule,
     BrowserAnimationsModule,
-    CardModule,
     InputTextModule,
     ButtonModule
   ],
