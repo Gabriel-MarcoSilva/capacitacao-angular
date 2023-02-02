@@ -8,7 +8,7 @@ if fail the command `npm install`, use the command `npm config set legacy-peer-d
 
 ## backend:
 
->> 
+>> https://github.com/matheusbattisti/curso_adonis_api_yt.git
 
 ## Development server
 

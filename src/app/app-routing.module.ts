@@ -1,5 +1,8 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { AboutComponent } from './comonenets/pages/about/about.component';
+import { HomeComponent } from './comonenets/pages/home/home.component';
+import { NewMomentsComponent } from './comonenets/pages/new-moments/new-moments.component';
 
 const routes: Routes = [
   // {path: '', recirectTo: 'arquivo'}
@@ -10,7 +13,9 @@ const routes: Routes = [
   //pra não carregar todos os modulos de vez; carrega os modulos sobre demanda
   {path:"**", redirectTo: ""}
   */
-
+    {path:"", component: HomeComponent},
+    {path: 'about', component: AboutComponent},
+    {path: 'moments/new', component: NewMomentsComponent}
 ];
 
 @NgModule({
