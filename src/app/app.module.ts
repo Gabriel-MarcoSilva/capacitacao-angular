@@ -2,19 +2,21 @@ import { AppRoutingModule } from './app-routing.module';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations"
 import { ButtonModule } from "primeng/button";
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome'
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { InputTextModule } from "primeng/inputtext"
 import { NgModule } from '@angular/core';
-import { ReactiveFormsModule} from "@angular/forms"
+import { ReactiveFormsModule } from "@angular/forms"
 
+import { AboutComponent } from './components/pages/about/about.component';
 import { AppComponent } from './app.component';
-import { HeaderComponent } from './comonenets/header/header.component';
-import { FooterComponent } from './comonenets/footer/footer.component';
-import { AboutComponent } from './comonenets/pages/about/about.component';
-import { HomeComponent } from './comonenets/pages/home/home.component';
-import { NewMomentsComponent } from './comonenets/pages/new-moments/new-moments.component';
-import { MomentFormComponent } from './components/moment-form/moment-form.component'
+import { FooterComponent } from './components/footer/footer.component';
+import { HeaderComponent } from './components/header/header.component';
+import { HomeComponent } from './components/pages/home/home.component';
+import { MomentFormComponent } from './components/moment-form/moment-form.component';
+import { MessagesComponent } from './components/messages/messages.component';
+import { NewMomentsComponent } from './components/pages/new-moments/new-moments.component';
 
 @NgModule({
   declarations: [
@@ -25,6 +27,7 @@ import { MomentFormComponent } from './components/moment-form/moment-form.compon
     HomeComponent,
     NewMomentsComponent,
     MomentFormComponent,
+    MessagesComponent,
   ],
   imports: [
     BrowserModule,
@@ -34,7 +37,8 @@ import { MomentFormComponent } from './components/moment-form/moment-form.compon
     BrowserAnimationsModule,
     InputTextModule,
     ButtonModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    FontAwesomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]
