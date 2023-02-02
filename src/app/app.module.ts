@@ -1,13 +1,14 @@
-import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
-import { BrowserModule } from '@angular/platform-browser';
-import { HttpClientModule } from '@angular/common/http';
-import { BrowserAnimationsModule } from "@angular/platform-browser/animations"
-
 import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component';
-import { InputTextModule } from "primeng/inputtext"
+import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from "@angular/platform-browser/animations"
 import { ButtonModule } from "primeng/button";
+import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+import { InputTextModule } from "primeng/inputtext"
+import { NgModule } from '@angular/core';
+import { ReactiveFormsModule} from "@angular/forms"
+
+import { AppComponent } from './app.component';
 import { HeaderComponent } from './comonenets/header/header.component';
 import { FooterComponent } from './comonenets/footer/footer.component';
 import { AboutComponent } from './comonenets/pages/about/about.component';
@@ -32,7 +33,8 @@ import { MomentFormComponent } from './components/moment-form/moment-form.compon
     FormsModule,
     BrowserAnimationsModule,
     InputTextModule,
-    ButtonModule
+    ButtonModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
