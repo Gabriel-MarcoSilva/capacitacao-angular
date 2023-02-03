@@ -1,11 +1,11 @@
 import { AppRoutingModule } from './app-routing.module';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations"
-import { ButtonModule } from "primeng/button";
+//import { ButtonModule } from "primeng/button";
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome'
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
-import { InputTextModule } from "primeng/inputtext"
+//import { InputTextModule } from "primeng/inputtext"
 import { NgModule } from '@angular/core';
 import { ReactiveFormsModule } from "@angular/forms"
 
@@ -35,8 +35,8 @@ import { NewMomentsComponent } from './components/pages/new-moments/new-moments.
     HttpClientModule,
     FormsModule,
     BrowserAnimationsModule,
-    InputTextModule,
-    ButtonModule,
+  //  InputTextModule,
+  //  ButtonModule,
     ReactiveFormsModule,
     FontAwesomeModule
   ],

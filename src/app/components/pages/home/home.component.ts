@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { faSearch } from '@fortawesome/free-solid-svg-icons';
 import { Momentos } from 'src/app/Moments';
 import { MomentService } from 'src/app/services/moment.service';
 
@@ -16,7 +17,10 @@ export class HomeComponent {
     private momentosService: MomentService
   ){}
 
-  ngOnInit(){
+  faSearch = faSearch
+  searchTerm: string = ""
+
+  ngOnInit(): void{
     this.momentosService.getMoment().subscribe((item) =>{
       const data = item.data
 
@@ -29,4 +33,12 @@ export class HomeComponent {
     })
   }
 
+  search(event: Event): void {
+    const target = event.target as HTMLInputElement;
+    const value = target.value;
+
+    this.moments = this.allMoments.filter((moment) =>{
+      return moment.title.toLowerCase().includes(value) //toLower pra n diferenciar caixa alta pra baixa
+    })
+  }
 }
