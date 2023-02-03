@@ -1,7 +1,7 @@
 export interface Comments{
-    id?:string,
+    id?:number,
     username: string,
-    momentId:string,
+    momentId:number,
     text: string,
     created_at?:string,
     updated_at?:string
