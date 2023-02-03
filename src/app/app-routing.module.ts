@@ -13,9 +13,9 @@ const routes: Routes = [
   //pra não carregar todos os modulos de vez; carrega os modulos sobre demanda
   {path:"**", redirectTo: ""}
   */
-    {path:"", component: HomeComponent},
-    {path: 'about', component: AboutComponent},
-    {path: 'moments/new', component: NewMomentsComponent}
+  { path: "", component: HomeComponent },
+  { path: 'about', component: AboutComponent },
+  { path: 'moments/new', component: NewMomentsComponent }
 ];
 
 @NgModule({
