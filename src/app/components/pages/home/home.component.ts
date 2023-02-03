@@ -21,7 +21,7 @@ export class HomeComponent {
   searchTerm: string = ""
 
   ngOnInit(): void{
-    this.momentosService.getMoment().subscribe((item) =>{
+    this.momentosService.getMoments().subscribe((item) =>{
       const data = item.data
 
       data.map((item) =>{
