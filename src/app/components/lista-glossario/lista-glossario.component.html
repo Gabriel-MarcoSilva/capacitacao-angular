@@ -1,0 +1,9 @@
+<div class="container-lista-glossario" *ngFor="let num of todos">
+    <a (click)="numero(num.id)">{{num.keyWord}}</a>
+    
+    <div class="item" [style]="{display: 'none'}" (click)="numero(num.id)">
+        {{num.description}}
+        <a routerLink="glossario/{{num.id}}">Editar</a>
+    </div>
+   
+</div>

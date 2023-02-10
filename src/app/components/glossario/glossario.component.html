@@ -1,0 +1,43 @@
+<!--
+    Glossário. 
+        Tela para cadastrar: 
+            termos, 
+            palavras e 
+            seu significado      para facilitar a compreensão do usuário
+    de questões de ordem técnica.
+        Não estará vinculada à cultura ou praga, mas todos os gestores de culturas
+    terão acesso a essa funcionalidade para realizar o cadastro e manutenção dos termos/palavras. 
+    O glossário também deverá passar pelo esquema de autorização para atualização do aplicativo.
+-->
+<a routerLink="">voltar</a>
+<div class="container-glossario">
+
+    <div *ngFor="let num of todos">
+        <div *ngIf="ID === num.id">
+            <h1> Glossário </h1>
+            <form class="form-glossario" [formGroup]="form">
+
+                <div class="termo">
+                    <label>
+                        Termo
+                        <input formControlName="termo"
+                            placeholder="Cadastre aqui o termo que você deseja" autofocus />
+                    </label>
+                </div>
+
+                <div class="significado">
+                    <label>
+                        significado
+                        <textarea formControlName="significado"
+                            placeholder="Cadastre aqui o significado que você deseja" autofocus></textarea>
+                    </label>
+                </div>
+
+                <button (click)="add()">Add</button>
+
+                <button (click)="save()">Salvar</button>
+
+            </form>
+        </div>
+    </div>
+</div>
